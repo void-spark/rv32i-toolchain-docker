@@ -1,5 +1,5 @@
 # Anything that may be used for building, but is also needed in the final image
-FROM ubuntu:18.04 AS base
+FROM ubuntu:latest AS base
 RUN apt-get update -qq \
 && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y -q \
     ca-certificates \    
